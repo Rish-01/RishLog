@@ -195,7 +195,7 @@ In logistic regression too, $ \theta $ can be estimated using maximum likelihood
 
 $$
     \begin{align*}
-        \theta_{ML} &= \arg\max_\theta \sum_{i = 1}^m \log (y^{(i)} | \boldsymbol{x}^{(i)}; \theta) \\\\
+        \theta_{ML} &= \arg\max_\theta \sum_{i = 1}^m \log P (y^{(i)} | \boldsymbol{x}^{(i)}; \theta) \\\\
         &= \arg\max_\theta \sum_{i = 1}^m \log p^{y^{(i)}} (1 - p)^{(1 - y^{(i)})} \\\\
         &= \arg\max_\theta \sum_{i = 1}^m (y^{(i)}) \log p + (1 - y^{(i)}) \log (1 - p)\\\\
         &= \arg\min_\theta -\sum_{i = 1}^m (y^{(i)}) \log p + (1 - y^{(i)}) \log (1 - p)
